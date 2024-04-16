@@ -1,0 +1,22 @@
+<h1 style="background-color:rgb(18, 109, 139);">TV Series</h1>
+<div class="container">
+  <table style="border: 1px solid gray;" class="table-sm" id="serie">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Channel</th>
+        <th>Season</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let serie of series">
+        <td style="background-color: #e9ecef;">{{ serie.id }}</td>
+        <td style="background-color: #e9ecef;color: blue;">{{ serie.name }}</td>
+        <td style="background-color: #e9ecef;">{{ serie.channel }}</td>
+        <td style="background-color: #e9ecef;">{{ serie.seasons }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>Seasons Average: {{ promedioTemporada }}</p>
+</div>
